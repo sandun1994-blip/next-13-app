@@ -6,10 +6,13 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  console.log('home');
+  
   return (
     <main className={styles.main}>
      <h1>hello world</h1>
-     <Link href={'/about'}>about link</Link>
+     <Link href={'/users'}>Users link</Link>
     </main>
   )
 }
